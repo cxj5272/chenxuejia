@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>シティホテル甲隆閣 - 東京・新宿のビジネスホテル</title>
+    <title>シティホテル甲隆閣 - 東京・新宿・新大久保のビジネスホテル</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #8b4513;
@@ -90,7 +91,7 @@
         /* ヒーローセクション */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('CA3A8671.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -199,6 +200,60 @@
             min-width: 24px;
         }
         
+        /* ショートタイムセクション */
+        .short-time {
+            background-color: #f8f4ed;
+        }
+        
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .price-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .price-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .price-duration {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .price-amount {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin: 15px 0;
+        }
+        
+        .price-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+        }
+        
         /* 客室セクション */
         .rooms {
             background-color: white;
@@ -250,10 +305,11 @@
         }
         
         .room-price {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: var(--dark-color);
             margin: 15px 0;
+            line-height: 1.8;
         }
         
         .room-features {
@@ -368,10 +424,12 @@
             
             nav ul {
                 margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
             
             nav ul li {
-                margin: 0 10px;
+                margin: 5px 10px;
             }
             
             .hero h1 {
@@ -385,6 +443,10 @@
             section {
                 padding: 60px 0;
             }
+            
+            .price-grid, .room-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -396,7 +458,8 @@
             <nav>
                 <ul>
                     <li><a href="#about">ホテル概要</a></li>
-                    <li><a href="#rooms">客室</a></li>
+                    <li><a href="#short-time">ショートタイム料金案内</a></li>
+                    <li><a href="#rooms">宿泊料金案内</a></li>
                     <li><a href="#access">アクセス</a></li>
                     <li><a href="#contact">お問合せ</a></li>
                 </ul>
@@ -408,7 +471,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>東京・新宿のビジネスホテル</h1>
-            <p>シティホテル甲隆閣は新宿エリアに位置し、ビジネスや観光に便利なロケーションです。<br>快適な客室とリーズナブルな価格でお客様をお迎えします。</p>
+            <p>シティホテル甲隆閣は新宿エリアに位置し、ビジネスや観光におすすめです。<br>リーズナブルな価格で快適な滞在を提供します。</p>
         </div>
     </section>
 
@@ -421,8 +484,8 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>シティホテル甲隆閣について</h3>
-                    <p>シティホテル甲隆閣は、新宿百人町にあるビジネスホテルです。全20室の客室を備え、シンプルで清潔な空間とリーズナブルな価格を特徴としています。ビジネス出張や観光の拠点として最適です。</p>
-                    <p>当ホテルでは、Wi-Fi無料接続、洗濯サービス、フロント24時間対応など、快適な滞在に必要な設備を整えております。新宿駅から徒歩圏内でありながら、静かな環境でゆっくりとお休みいただけます。</p>
+                    <p>シティホテル甲隆閣は、新宿百人町にあるビジネスホテルです。シンプルで清潔な空間とリーズナブルな価格を特徴としています。ビジネス出張や観光の拠点として最適です。</p>
+                    <p>当ホテルでは、Wi-Fi無料接続、フロント24時間対応など、快適な滞在に必要な設備を整えております。新宿駅から徒歩圏内でありながら、ゆったりくつろいでお休みいただけます。</p>
                     
                     <div class="info-box">
                         <div class="info-item">
@@ -438,18 +501,60 @@
                             <div>電話：03-3369-5526</div>
                         </div>
                         <div class="info-item">
-                            <div class="info-icon">✉️</div>
-                            <div>メール：info@chenxuejia.com（実際のメールアドレスに置き換えてください）</div>
-                        </div>
-                        <div class="info-item">
                             <div class="info-icon">🕒</div>
                             <div>チェックイン：15:00｜チェックアウト：10:00</div>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ホテル外観">
+                    <!-- 実際のホテル外観写真をここに配置 -->
+                    <div style="background: #e8d0b3; height: 100%; display: flex; align-items: center; justify-content: center; color: #8b4513; font-size: 1.2rem;">
+                        ホテル外観写真
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ショートタイムセクション -->
+    <section id="short-time" class="short-time">
+        <div class="container">
+            <div class="section-title">
+                <h2>ショートタイム料金</h2>
+            </div>
+            <div class="price-grid">
+                <div class="price-card">
+                    <div class="price-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="price-duration">90分プラン</h3>
+                    <div class="price-amount">2,200円<span>〜</span></div>
+                    <p class="price-note">※税込価格</p>
+                </div>
+                
+                <div class="price-card">
+                    <div class="price-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="price-duration">120分プラン</h3>
+                    <div class="price-amount">2,700円<span>〜</span></div>
+                    <p class="price-note">※税込価格</p>
+                </div>
+                
+                <div class="price-card">
+                    <div class="price-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="price-duration">180分プラン</h3>
+                    <div class="price-amount">3,200円<span>〜</span></div>
+                    <p class="price-note">※税込価格</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <p>※上記料金は税込価格です</p>
+                <p>※ご利用時間はチェックインから90分・120分・180分となります</p>
+                <p>※平日延長料金：30分ごとに600円（税込）土日祝日延長料金：30分ごとに1000円（税込）</p>
             </div>
         </div>
     </section>
@@ -461,54 +566,51 @@
                 <h2>客室・料金</h2>
             </div>
             <div class="room-grid">
-                <!-- 客室カード 1 -->
+                <!-- 客室カード 1 (ダブルルーム) -->
                 <div class="room-card">
                     <div class="room-image">
-                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="シングルルーム">
-                    </div>
-                    <div class="room-details">
-                        <h3 class="room-type">シングルルーム</h3>
-                        <p>シンプルで機能的なシングルルーム。ビジネス利用に最適です。</p>
-                        <div class="room-features">
-                            <span class="feature">19㎡</span>
-                            <span class="feature">1名</span>
-                            <span class="feature">喫煙</span>
+                        <!-- 実際の客室写真をここに配置 -->
+                        <div style="background: #d4a76a; height: 100%; display: flex; align-items: center; justify-content: center; color: #4a2c1d; font-size: 1.2rem;">
+                            ダブルルーム写真
                         </div>
-                        <div class="room-price">7000円<span>/泊</span></div>
-                    </div>
-                </div>
-                
-                <!-- 客室カード 2 -->
-                <div class="room-card">
-                    <div class="room-image">
-                        <img src="https://images.unsplash.com/photo-1592229505726-ca121043fa5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ダブルルーム">
                     </div>
                     <div class="room-details">
                         <h3 class="room-type">ダブルルーム</h3>
                         <p>ゆったりとしたダブルベッドの客室。カップルや一人旅におすすめ。</p>
                         <div class="room-features">
-                            <span class="feature">18㎡</span>
+                            <span class="feature">19㎡</span>
                             <span class="feature">1-2名</span>
-                            <span class="feature">禁煙</span>
+                            <span class="feature">喫煙</span>
                         </div>
-                        <div class="room-price">7,800円<span>/泊</span></div>
+                        <div class="room-price">
+                            <div>15:00チェックイン: 12,000円〜</div>
+                            <div>22:00チェックイン: 7,000円〜</div>
+                            <span>/泊（税込）</span>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- 客室カード 3 -->
+                <!-- 客室カード 2 (ツインルーム) -->
                 <div class="room-card">
                     <div class="room-image">
-                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ツインルーム">
+                        <!-- 実際の客室写真をここに配置 -->
+                        <div style="background: #d4a76a; height: 100%; display: flex; align-items: center; justify-content: center; color: #4a2c1d; font-size: 1.2rem;">
+                            ツインルーム写真
+                        </div>
                     </div>
                     <div class="room-details">
                         <h3 class="room-type">ツインルーム</h3>
                         <p>2名様利用に最適なツインルーム。ビジネス出張や友人同士の旅行に。</p>
                         <div class="room-features">
-                            <span class="feature">20㎡</span>
-                            <span class="feature">2名</span>
-                            <span class="feature">禁煙</span>
+                            <span class="feature">19㎡</span>
+                            <span class="feature">1-2名</span>
+                            <span class="feature">喫煙</span>
                         </div>
-                        <div class="room-price">8,800円<span>/泊</span></div>
+                        <div class="room-price">
+                            <div>15:00チェックイン: 12,000円〜</div>
+                            <div>22:00チェックイン: 7,000円〜</div>
+                            <span>/泊（税込）</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -523,8 +625,8 @@
             </div>
             <div class="access-content">
                 <div class="access-map">
-                    <!-- ここにGoogleマップを埋め込む -->
-                    <iframe src="https://www.google.com/maps?q=東京都新宿区百人町2-23-48&output=embed"></iframe>
+                    <!-- Googleマップ埋め込み -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6480.762295161183!2d139.69886057635606!3d35.70128402207868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d28b7850e91%3A0x3a67a1f5b6d3a3f5!2z5pel5pys44CB44CSMTY5LTAwNzMg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Y6f5Y-k5aSn5a2m!5e0!3m2!1sja!2sjp!4v1688976550000!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="access-info">
                     <h3>所在地</h3>
@@ -541,7 +643,6 @@
                             </div>
                         </div>
                         
-                       
                         <div class="transport-item">
                             <div class="transport-icon">🚉</div>
                             <div>
@@ -551,7 +652,24 @@
                         </div>
                     </div>
                     
-                    
+                    <div class="transport-list" style="margin-top: 30px;">
+                        <h3>空港からのアクセス</h3>
+                        
+                        <div class="transport-item">
+                            <div class="transport-icon">✈️</div>
+                            <div>
+                                <strong>羽田空港から</strong><br>
+                                リムジンバスで約60分「新宿駅西口」下車、徒歩12分
+                            </div>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <div class="transport-icon">✈️</div>
+                            <div>
+                                <strong>成田空港から</strong><br>
+                                リムジンバスで約90分「新宿駅西口」下車、徒歩12分
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -569,10 +687,10 @@
                 
                 <div class="footer-section footer-contact">
                     <h3 class="footer-title">お問合せ</h3>
-                    <p>🏨 シティホテル甲隆閣</p>
-                    <p>📍 〒169-0073 東京都新宿区百人町2-23-48</p>
-                    <p>📞 03-3369-5526</p>
-                    <p>✉️ info@chenxuejia.com</p>
+                    <p><i class="fas fa-hotel"></i> シティホテル甲隆閣</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 〒169-0073 東京都新宿区百人町2-23-48</p>
+                    <p><i class="fas fa-phone"></i> 03-3369-5526</p>
+                    <p><i class="fas fa-envelope"></i> info@chenxuejia.com</p>
                 </div>
             </div>
             
