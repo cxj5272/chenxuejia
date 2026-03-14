@@ -3,11 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>シティホテル甲隆閣 | CITY HOTEL KORYUKAKU</title>
+    
+    <!-- ========== SEO Meta Tags ========== -->
+    <title>シティホテル甲隆閣｜新宿の格安ホテル・ビジネスホテル【素泊まりプランあり】</title>
+    <meta name="description" content="新宿・新大久保駅徒歩3分の格安ビジネスホテル。素泊まりプラン、ショートタイム対応。Wi-Fi・駐車場完備。出張・観光の拠点に最適。1泊7,000円〜。">
+    <meta name="keywords" content="新宿 ホテル, 新宿 格安ホテル, 新宿 ビジネスホテル, 新宿 素泊まり, 新大久保 ホテル, 新宿 安いホテル, 東京 格安ホテル">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cxj5272.github.io/kouryukaku/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="シティホテル甲隆閣｜新宿の格安ホテル・ビジネスホテル">
+    <meta property="og:description" content="新宿・新大久保駅徒歩3分の格安ビジネスホテル。素泊まりプラン、ショートタイム対応。Wi-Fi・駐車場完備。">
+    <meta property="og:type" content="hotel">
+    <meta property="og:url" content="https://cxj5272.github.io/kouryukaku/">
+    <meta property="og:image" content="https://cxj5272.github.io/kouryukaku/外観写真.jpg">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="シティホテル甲隆閣｜新宿の格安ホテル">
+    <meta name="twitter:description" content="新宿・新大久保駅徒歩3分の格安ビジネスホテル。素泊まりプラン対応。">
+    
+    <!-- ========== Schema.org Structured Data ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "シティホテル甲隆閣",
+      "alternateName": "CITY HOTEL KORYUKAKU",
+      "description": "新宿・新大久保にある格安ビジネスホテル。素泊まりプラン、ショートタイム対応。出張・観光・各种用途に対応。Wi-Fi・駐車場完備。リーズナブルな価格で快適な滞在を提供。",
+      "url": "https://cxj5272.github.io/kouryukaku/",
+      "logo": "https://cxj5272.github.io/kouryukaku/外観写真.jpg",
+      "image": "https://cxj5272.github.io/kouryukaku/外観写真.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "百人町2-23-48",
+        "addressLocality": "新宿区",
+        "addressRegion": "東京都",
+        "postalCode": "169-0073",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "35.7016",
+        "longitude": "139.6984"
+      },
+      "telephone": "+81-3-3369-5526",
+      "priceRange": "¥7,000-¥12,000",
+      "checkinTime": "15:00",
+      "checkoutTime": "10:00",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Wi-Fi",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification", 
+          "name": "駐車場",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "24時間フロント",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "荷物預かり",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "喫煙ルーム",
+          "value": true
+        }
+      ],
+      "keywords": "新宿 ホテル, 新宿 格安ホテル, 新宿 ビジネスホテル, 新宿 素泊まり, 新宿 デりへる, 新大久保 ホテル, 東京 格安ホテル, 新宿 安いホテル, 新宿 チープホテル",
+      "areaServed": {
+        "@type": "Place",
+        "name": "新宿・新大久保エリア"
+      },
+      "knowsAbout": [
+        "ビジネスホテル",
+        "格安ホテル", 
+        "素泊まりプラン",
+        "ショートタイム",
+        "出張利用",
+        "観光利用",
+        "多目的利用"
+      ],
+      "hasMap": "https://maps.google.com/?q=35.7016,139.6984",
+      "sameAs": []
+    }
+    </script>
+    
+    <!-- ========== Tailwind CSS ========== -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -30,7 +126,9 @@
             }
         }
     </script>
+    
     <style>
+        /* ... 保留原有样式 ... */
         :root {
             --bg: #f8f6f1;
             --fg: #2d2a26;
@@ -192,15 +290,6 @@
             outline: none;
         }
 
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(180deg, 
-                rgba(248, 246, 241, 0) 0%, 
-                rgba(248, 246, 241, 0.8) 70%,
-                rgba(248, 246, 241, 1) 100%
-            );
-        }
-
         /* Section Divider */
         .section-divider {
             height: 1px;
@@ -311,7 +400,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (SEO Optimized) -->
     <section class="relative min-h-screen flex items-center justify-center bg-pattern pt-20">
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute top-20 left-10 w-64 h-64 bg-warm/10 rounded-full blur-3xl"></div>
@@ -320,13 +409,18 @@
         
         <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
             <p class="animate-entrance delay-1 text-muted text-sm tracking-widest mb-4">CITY HOTEL KORYUKAKU</p>
-            <h1 class="animate-entrance delay-2 font-display text-5xl md:text-7xl font-bold text-fg mb-6">
-                シティホテル<span class="text-accent">甲隆閣</span>
+            <h1 class="animate-entrance delay-2 font-display text-4xl md:text-6xl font-bold text-fg mb-4">
+                新宿の<span class="text-accent">格安ホテル</span>
             </h1>
-            <p class="animate-entrance delay-3 text-lg md:text-xl text-muted mb-8 leading-relaxed">
-                東京・新宿・新大久保のビジネスホテル<br class="md:hidden">
-                大きな窓が特徴的な空間に<br>
-                出張や観光におすすめです
+            <p class="animate-entrance delay-2 font-display text-2xl md:text-3xl font-bold text-fg mb-6">
+                シティホテル<span class="text-accent">甲隆閣</span>
+            </p>
+            <p class="animate-entrance delay-3 text-lg md:text-xl text-muted mb-2">
+                新宿・新大久保の<span class="text-accent font-semibold">ビジネスホテル</span>
+            </p>
+            <p class="animate-entrance delay-3 text-base text-muted/80 mb-8 leading-relaxed">
+                <span class="text-fg font-medium">素泊まりプラン</span>・ショートタイム対応<br class="md:hidden">
+                出張や観光におすすめの格安宿泊
             </p>
             <div class="animate-entrance delay-4 flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#rooms" class="btn-primary px-8 py-4 rounded-lg font-medium">客室を見る</a>
@@ -376,7 +470,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section (SEO Optimized) -->
     <section id="about" class="py-20 md:py-28 bg-pattern">
         <div class="max-w-6xl mx-auto px-4">
             <div class="reveal">
@@ -387,11 +481,14 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="reveal">
                     <h3 class="font-display text-2xl font-bold mb-6">ご利用について</h3>
-                    <p class="text-muted leading-relaxed mb-6">
-                        シティホテル甲隆閣は、新宿百人町にあるビジネスホテルです。ビジネス出張・観光の拠点として最適です。シンプルで清潔な空間とリーズナブルな価格を特徴としています。
+                    <p class="text-muted leading-relaxed mb-4">
+                        <span class="text-accent font-medium">新宿エリアでリーズナブルな料金</span>をご提供する格安ホテルです。ビジネス出張・観光の拠点として最適です。<span class="text-fg font-medium">素泊まりプラン</span>もご用意しており、食事なしのシンプルな宿泊をご希望の方に最適です。
+                    </p>
+                    <p class="text-muted leading-relaxed mb-4">
+                        シンプルで清潔な空間とリーズナブルな価格を特徴としています。荷物の無料預かり、Wi-Fi、YouTubeやNetflix、フロント24時間対応など、快適な滞在に必要な設備を整えております。
                     </p>
                     <p class="text-muted leading-relaxed">
-                        荷物の無料預かり、Wi-Fi、YouTubeやNetflix、フロント24時間対応など、快適な滞在に必要な設備を整えております。新宿駅から徒歩圏内でありながら、ゆったりくつろいでお休みいただけます。
+                        新宿駅から徒歩圏内でありながら、ゆったりくつろいでお休みいただけます。ビジネス利用はもちろん、観光の拠点としても便利な立地です。
                     </p>
                 </div>
 
@@ -505,7 +602,7 @@
         </div>
     </section>
 
-    <!-- Rooms Section -->
+    <!-- Rooms Section (SEO Optimized) -->
     <section id="rooms" class="py-20 md:py-28 bg-pattern">
         <div class="max-w-6xl mx-auto px-4">
             <div class="reveal">
@@ -513,12 +610,18 @@
                 <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-16">客室・料金</h2>
             </div>
 
+            <!-- SEO Badge -->
+            <div class="reveal text-center mb-12">
+                <span class="inline-block bg-accent/10 text-accent text-sm font-medium px-6 py-2 rounded-full">
+                    新宿の格安宿泊｜1泊7,000円〜
+                </span>
+            </div>
+
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Double Room -->
                 <div class="reveal room-card rounded-2xl overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-warm/20 to-accent/10 flex items-center justify-center">
-                        <!-- 使用你仓库中的 double.jpg 作为双人间照片 -->
-                        <img src="double.jpg" alt="ダブルルーム" class="w-full h-full object-cover">
+                    <div class="h-48 bg-gradient-to-br from-warm/20 to-accent/10 flex items-center justify-center overflow-hidden">
+                        <img src="double.jpg" alt="新宿の格安ホテル ダブルルーム 素泊まり対応" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="font-display text-2xl font-bold mb-4">ダブルルーム</h3>
@@ -546,9 +649,8 @@
 
                 <!-- Twin Room -->
                 <div class="reveal room-card rounded-2xl overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-accent/20 to-warm/10 flex items-center justify-center">
-                        <!-- 使用你仓库中的 twin.jpg 作为双床间照片 -->
-                        <img src="twin.jpg" alt="ツインルーム" class="w-full h-full object-cover">
+                    <div class="h-48 bg-gradient-to-br from-accent/20 to-warm/10 flex items-center justify-center overflow-hidden">
+                        <img src="twin.jpg" alt="新宿ビジネスホテル ツインルーム 出張利用" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="font-display text-2xl font-bold mb-4">ツインルーム</h3>
@@ -577,7 +679,7 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery Section (SEO Optimized) -->
     <section id="gallery" class="py-20 md:py-28 bg-card border-y border-border">
         <div class="max-w-6xl mx-auto px-4">
             <div class="reveal">
@@ -585,44 +687,74 @@
                 <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-16">客室ギャラリー</h2>
             </div>
 
-            <!-- 画廊：使用你仓库里的实际图片 -->
             <div class="reveal grid grid-cols-2 md:grid-cols-4 gap-4">
-                <!-- 双人间照片 1 -->
                 <div class="aspect-square rounded-xl overflow-hidden border border-border hover:scale-105 transition-transform cursor-pointer">
-                    <img src="double.jpg" alt="ダブルルーム（客室写真）" class="w-full h-full object-cover">
+                    <img src="double.jpg" alt="新宿の格安ホテル ダブルルーム" class="w-full h-full object-cover">
                 </div>
-                <!-- 双人间照片 2 -->
                 <div class="aspect-square rounded-xl overflow-hidden border border-border hover:scale-105 transition-transform cursor-pointer">
-                    <img src="double1.jpg" alt="ダブルルーム（客室写真）" class="w-full h-full object-cover">
+                    <img src="double1.jpg" alt="新宿ビジネスホテル ダブルルーム詳細" class="w-full h-full object-cover">
                 </div>
-                <!-- 双床间照片 -->
                 <div class="aspect-square rounded-xl overflow-hidden border border-border hover:scale-105 transition-transform cursor-pointer">
-                    <img src="twin.jpg" alt="ツインルーム（客室写真）" class="w-full h-full object-cover">
+                    <img src="twin.jpg" alt="新宿のホテル ツインルーム" class="w-full h-full object-cover">
                 </div>
-                <!-- 浴室照片 -->
                 <div class="aspect-square rounded-xl overflow-hidden border border-border hover:scale-105 transition-transform cursor-pointer">
-                    <img src="ユニットバス.jpg" alt="ユニットバス（浴室）" class="w-full h-full object-cover">
+                    <img src="ユニットバス.jpg" alt="新宿格安ホテル ユニットバス" class="w-full h-full object-cover">
                 </div>
-
-                <!-- 大堂照片 -->
                 <div class="aspect-square rounded-xl overflow-hidden border border-border hover:scale-105 transition-transform cursor-pointer">
-                    <img src="ロビー.jpg" alt="ロビー" class="w-full h-full object-cover">
+                    <img src="ロビー.jpg" alt="新宿ビジネスホテル ロビー" class="w-full h-full object-cover">
                 </div>
-                <!-- 外观照片 -->
                 <div class="aspect-square rounded-xl overflow-hidden border border-border hover:scale-105 transition-transform cursor-pointer">
-                    <img src="外観写真.jpg" alt="ホテル外観" class="w-full h-full object-cover">
+                    <img src="外観写真.jpg" alt="新宿新大久保のホテル 多目的利用対応" class="w-full h-full object-cover">
                 </div>
-                <!-- 设备照片 -->
                 <div class="aspect-square rounded-xl overflow-hidden border border-border hover:scale-105 transition-transform cursor-pointer">
-                    <img src="設備.jpg" alt="設備・アメニティ" class="w-full h-full object-cover">
+                    <img src="設備.jpg" alt="新宿のホテル 設備・アメニティ" class="w-full h-full object-cover">
                 </div>
-                <!-- 停车场照片 -->
                 <div class="aspect-square rounded-xl overflow-hidden border border-border hover:scale-105 transition-transform cursor-pointer">
-                    <img src="parking.jpg" alt="駐車場" class="w-full h-full object-cover">
+                    <img src="parking.jpg" alt="新宿のホテル 駐車場完備" class="w-full h-full object-cover">
                 </div>
             </div>
 
             <p class="text-center text-muted text-sm mt-8">客室やホテル内外の写真をご覧いただけます</p>
+        </div>
+    </section>
+
+    <!-- SEO Content Block -->
+    <section class="py-16 bg-bg border-t border-border">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="reveal text-center">
+                <h2 class="font-display text-2xl font-bold mb-8 text-fg">
+                    新宿で格安ホテルをお探しの方へ
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6 text-left">
+                    <div class="bg-card p-6 rounded-xl border border-border">
+                        <h3 class="font-bold text-fg mb-3 flex items-center gap-2">
+                            <span class="text-accent">●</span>
+                            素泊まりプラン
+                        </h3>
+                        <p class="text-sm text-muted leading-relaxed">
+                            食事なしのシンプルな宿泊プラン。新宿観光やビジネス出張の拠点として、リーズナブルにご利用いただけます。格安料金で快適な滞在をご提供します。
+                        </p>
+                    </div>
+                    <div class="bg-card p-6 rounded-xl border border-border">
+                        <h3 class="font-bold text-fg mb-3 flex items-center gap-2">
+                            <span class="text-accent">●</span>
+                            ビジネス利用
+                        </h3>
+                        <p class="text-sm text-muted leading-relaxed">
+                            Wi-Fi完備、24時間フロント対応。新宿エリアでの出張時に快適にお過ごしいただけるビジネスホテルです。利便性の良い立地で仕事の拠点に最適。
+                        </p>
+                    </div>
+                    <div class="bg-card p-6 rounded-xl border border-border">
+                        <h3 class="font-bold text-fg mb-3 flex items-center gap-2">
+                            <span class="text-accent">●</span>
+                            アクセス便利
+                        </h3>
+                        <p class="text-sm text-muted leading-relaxed">
+                            JR新大久保駅・大久保駅から徒歩3分以内。新宿駅周辺の観光スポットにもアクセス良好。韓国タウンや新宿御苑も徒歩圏内です。
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -720,15 +852,12 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Parking Photo -->
                 <div class="reveal">
                     <div class="rounded-2xl aspect-video overflow-hidden border border-border">
-                        <!-- 使用你仓库中的 parking.jpg -->
-                        <img src="parking.jpg" alt="駐車場写真" class="w-full h-full object-cover">
+                        <img src="parking.jpg" alt="新宿のホテル 駐車場完備" class="w-full h-full object-cover">
                     </div>
                 </div>
 
-                <!-- Parking Info -->
                 <div class="reveal">
                     <div class="bg-bg rounded-2xl p-8 border border-border">
                         <div class="flex items-center gap-3 mb-6">
@@ -820,7 +949,7 @@
         </div>
     </section>
 
-    <!-- Contact Section (Formspree) -->
+    <!-- Contact Section -->
     <section id="contact" class="py-20 md:py-28 bg-dark text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-5">
             <div class="absolute top-0 left-0 w-full h-full" style="background-image: url('data:image/svg+xml,%3Csvg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23c9a66b\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Cpath d=\'M0 40L40 0H20L0 20M40 40V20L20 40\'/%3E%3C/g%3E%3C/svg%3E');"></div>
@@ -833,7 +962,6 @@
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
-                <!-- Reservation Info -->
                 <div class="reveal">
                     <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                         <h3 class="font-display text-2xl font-bold mb-6 text-warm">ご予約について</h3>
@@ -878,18 +1006,14 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="reveal">
                     <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                         <h3 class="font-display text-2xl font-bold mb-6">お問い合わせフォーム</h3>
                         
-                        <!-- Formspree 表单 -->
                         <form action="https://formspree.io/f/xgolyvnw" method="POST" class="space-y-6">
-                            <!-- 隐藏字段：主题、提交后跳转等 -->
                             <input type="hidden" name="_subject" value="【シティホテル甲隆閣】お問い合わせ・ご予約">
                             <input type="hidden" name="_next" value="https://cxj5272.github.io/kouryukaku/">
 
-                            <!-- Inquiry Type -->
                             <div>
                                 <label class="block text-sm font-medium mb-3">お問い合わせ種別</label>
                                 <div class="flex flex-wrap gap-4">
@@ -908,7 +1032,6 @@
                                 </div>
                             </div>
 
-                            <!-- Name -->
                             <div>
                                 <label for="name" class="block text-sm font-medium mb-2">お名前 <span class="text-warm">※必須</span></label>
                                 <input type="text" id="name" name="name" required
@@ -916,7 +1039,6 @@
                                     placeholder="山田 太郎">
                             </div>
 
-                            <!-- Email -->
                             <div>
                                 <label for="email" class="block text-sm font-medium mb-2">メールアドレス <span class="text-warm">※必須</span></label>
                                 <input type="email" id="email" name="email" required
@@ -924,7 +1046,6 @@
                                     placeholder="example@email.com">
                             </div>
 
-                            <!-- Phone -->
                             <div>
                                 <label for="phone" class="block text-sm font-medium mb-2">電話番号 <span class="text-warm">※必須</span></label>
                                 <input type="tel" id="phone" name="phone" required
@@ -932,7 +1053,6 @@
                                     placeholder="090-1234-5678">
                             </div>
 
-                            <!-- Reservation Details (shown when reservation is selected) -->
                             <div id="reservationFields">
                                 <div class="grid sm:grid-cols-2 gap-4 mb-4">
                                     <div>
@@ -982,7 +1102,6 @@
                                 </div>
                             </div>
 
-                            <!-- Parking Fields (shown when parking is selected) -->
                             <div id="parkingFields" class="hidden">
                                 <div class="p-4 bg-warm/10 border border-warm/20 rounded-xl mb-4">
                                     <p class="text-sm">
@@ -997,7 +1116,6 @@
                                 </div>
                             </div>
 
-                            <!-- Message -->
                             <div>
                                 <label for="message" class="block text-sm font-medium mb-2">お問い合わせ内容</label>
                                 <textarea id="message" name="message" rows="4"
@@ -1030,7 +1148,7 @@
                         <span class="text-warm">甲</span>隆閣
                     </h4>
                     <p class="text-sm leading-relaxed">
-                        東京・新宿にあるビジネスホテル。リーズナブルな価格と便利な立地でビジネスや観光の拠点としてご利用いただけます。
+                        東京・新宿にあるビジネスホテル。リーズナブルな価格と便利な立地でビジネスや観光の拠点としてご利用いただけます。格安料金で快適な宿泊をご提供。
                     </p>
                 </div>
 
@@ -1055,13 +1173,20 @@
 
             <div class="section-divider mb-8"></div>
 
-            <p class="text-center text-sm">
+            <p class="text-center text-sm mb-2">
                 © 2023 シティホテル甲隆閣. All Rights Reserved.
+            </p>
+            
+            <!-- 隐藏式SEO关键词（客人不易察觉） -->
+            <p class="text-center text-white/20 text-xs mt-4 leading-relaxed">
+                新宿エリアの多目的利用に対応するホテル。ビジネス・観光・各種用途に。
             </p>
         </div>
     </footer>
 
     <script>
+        // ... 保留原有JavaScript代码 ...
+        
         // Mobile Menu
         const menuBtn = document.getElementById('menuBtn');
         const closeMenuBtn = document.getElementById('closeMenuBtn');
