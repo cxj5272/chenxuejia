@@ -128,7 +128,6 @@
     </script>
     
     <style>
-        /* ... 保留原有样式 ... */
         :root {
             --bg: #f8f6f1;
             --fg: #2d2a26;
@@ -367,7 +366,6 @@
                     <li><a href="#gallery" class="nav-link py-2">ギャラリー</a></li>
                     <li><a href="#access" class="nav-link py-2">アクセス</a></li>
                     <li><a href="#parking" class="nav-link py-2">駐車場</a></li>
-                    <li><a href="#contact" class="nav-link py-2">お問合せ</a></li>
                 </ul>
 
                 <!-- Mobile Menu Button -->
@@ -394,7 +392,6 @@
                     <li><a href="#gallery" class="block text-fg hover:text-accent transition-colors">ギャラリー</a></li>
                     <li><a href="#access" class="block text-fg hover:text-accent transition-colors">アクセス</a></li>
                     <li><a href="#parking" class="block text-fg hover:text-accent transition-colors">駐車場</a></li>
-                    <li><a href="#contact" class="block text-fg hover:text-accent transition-colors">お問合せ</a></li>
                 </ul>
             </div>
         </div>
@@ -424,7 +421,6 @@
             </p>
             <div class="animate-entrance delay-4 flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#rooms" class="btn-primary px-8 py-4 rounded-lg font-medium">客室を見る</a>
-                <a href="#contact" class="px-8 py-4 rounded-lg font-medium border-2 border-fg text-fg hover:bg-fg hover:text-bg transition-colors">ご予約・お問合せ</a>
             </div>
         </div>
 
@@ -949,200 +945,10 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-28 bg-dark text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-0 left-0 w-full h-full" style="background-image: url('data:image/svg+xml,%3Csvg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23c9a66b\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Cpath d=\'M0 40L40 0H20L0 20M40 40V20L20 40\'/%3E%3C/g%3E%3C/svg%3E');"></div>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <div class="reveal">
-                <p class="text-warm text-sm tracking-widest mb-2 text-center">CONTACT</p>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-16">お問い合わせ・ご予約</h2>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div class="reveal">
-                    <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                        <h3 class="font-display text-2xl font-bold mb-6 text-warm">ご予約について</h3>
-                        
-                        <div class="info-box bg-white/5 rounded-xl p-6 mb-6 border-l-4 border-warm">
-                            <p class="text-sm leading-relaxed">
-                                客室のご予約は、お電話または下記フォームよりお問い合わせください。<br>
-                                <span class="text-warm font-bold">予約確定は当ホテルからの返信メールをもって成立</span>となります。
-                            </p>
-                        </div>
-
-                        <h4 class="font-bold mb-4">ご予約に必要な情報</h4>
-                        <ul class="space-y-3 text-sm">
-                            <li class="flex items-center gap-3">
-                                <span class="w-6 h-6 bg-warm/20 rounded-full flex items-center justify-center text-warm text-xs font-bold">1</span>
-                                <span>宿泊日（チェックイン・チェックアウト日）</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="w-6 h-6 bg-warm/20 rounded-full flex items-center justify-center text-warm text-xs font-bold">2</span>
-                                <span>宿泊人数</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="w-6 h-6 bg-warm/20 rounded-full flex items-center justify-center text-warm text-xs font-bold">3</span>
-                                <span>宿泊者電話番号</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="w-6 h-6 bg-warm/20 rounded-full flex items-center justify-center text-warm text-xs font-bold">4</span>
-                                <span>ご希望のチェックイン時間</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="w-6 h-6 bg-warm/20 rounded-full flex items-center justify-center text-warm text-xs font-bold">5</span>
-                                <span>部屋タイプ（ダブル／ツイン）</span>
-                            </li>
-                        </ul>
-
-                        <div class="mt-8 p-4 bg-warm/10 border border-warm/20 rounded-xl">
-                            <p class="text-sm">
-                                <span class="text-warm font-bold">予約の流れ：</span><br>
-                                お問い合わせ → 空室確認 → 当ホテルより返信 → 予約確定
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="reveal">
-                    <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                        <h3 class="font-display text-2xl font-bold mb-6">お問い合わせフォーム</h3>
-                        
-                        <form action="https://formspree.io/f/xgolyvnw" method="POST" class="space-y-6">
-                            <input type="hidden" name="_subject" value="【シティホテル甲隆閣】お問い合わせ・ご予約">
-                            <input type="hidden" name="_next" value="https://cxj5272.github.io/kouryukaku/">
-
-                            <div>
-                                <label class="block text-sm font-medium mb-3">お問い合わせ種別</label>
-                                <div class="flex flex-wrap gap-4">
-                                    <label class="flex items-center gap-2 cursor-pointer">
-                                        <input type="radio" name="inquiryType" value="reservation" class="custom-checkbox rounded-full" checked>
-                                        <span class="text-sm">部屋の予約</span>
-                                    </label>
-                                    <label class="flex items-center gap-2 cursor-pointer">
-                                        <input type="radio" name="inquiryType" value="parking" class="custom-checkbox rounded-full">
-                                        <span class="text-sm">駐車場予約</span>
-                                    </label>
-                                    <label class="flex items-center gap-2 cursor-pointer">
-                                        <input type="radio" name="inquiryType" value="other" class="custom-checkbox rounded-full">
-                                        <span class="text-sm">その他</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="name" class="block text-sm font-medium mb-2">お名前 <span class="text-warm">※必須</span></label>
-                                <input type="text" id="name" name="name" required
-                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all"
-                                    placeholder="山田 太郎">
-                            </div>
-
-                            <div>
-                                <label for="email" class="block text-sm font-medium mb-2">メールアドレス <span class="text-warm">※必須</span></label>
-                                <input type="email" id="email" name="email" required
-                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all"
-                                    placeholder="example@email.com">
-                            </div>
-
-                            <div>
-                                <label for="phone" class="block text-sm font-medium mb-2">電話番号 <span class="text-warm">※必須</span></label>
-                                <input type="tel" id="phone" name="phone" required
-                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all"
-                                    placeholder="090-1234-5678">
-                            </div>
-
-                            <div id="reservationFields">
-                                <div class="grid sm:grid-cols-2 gap-4 mb-4">
-                                    <div>
-                                        <label for="checkin" class="block text-sm font-medium mb-2">チェックイン日</label>
-                                        <input type="date" id="checkin" name="checkin"
-                                            class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all">
-                                    </div>
-                                    <div>
-                                        <label for="checkout" class="block text-sm font-medium mb-2">チェックアウト日</label>
-                                        <input type="date" id="checkout" name="checkout"
-                                            class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all">
-                                    </div>
-                                </div>
-
-                                <div class="grid sm:grid-cols-2 gap-4 mb-4">
-                                    <div>
-                                        <label for="guests" class="block text-sm font-medium mb-2">宿泊人数</label>
-                                        <select id="guests" name="guests"
-                                            class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all">
-                                            <option value="1" class="bg-dark">1名</option>
-                                            <option value="2" class="bg-dark">2名</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label for="roomType" class="block text-sm font-medium mb-2">部屋タイプ</label>
-                                        <select id="roomType" name="roomType"
-                                            class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all">
-                                            <option value="double" class="bg-dark">ダブルルーム</option>
-                                            <option value="twin" class="bg-dark">ツインルーム</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label for="checkinTime" class="block text-sm font-medium mb-2">ご希望チェックイン時間</label>
-                                    <select id="checkinTime" name="checkinTime"
-                                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all">
-                                        <option value="15:00" class="bg-dark">15:00</option>
-                                        <option value="16:00" class="bg-dark">16:00</option>
-                                        <option value="17:00" class="bg-dark">17:00</option>
-                                        <option value="18:00" class="bg-dark">18:00</option>
-                                        <option value="19:00" class="bg-dark">19:00</option>
-                                        <option value="20:00" class="bg-dark">20:00</option>
-                                        <option value="21:00" class="bg-dark">21:00</option>
-                                        <option value="22:00" class="bg-dark">22:00（遅いチェックイン）</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div id="parkingFields" class="hidden">
-                                <div class="p-4 bg-warm/10 border border-warm/20 rounded-xl mb-4">
-                                    <p class="text-sm">
-                                        <span class="text-warm font-bold">※車高制限：155cm以下</span><br>
-                                        必ず事前に空き状況をお確認ください。
-                                    </p>
-                                </div>
-                                <div>
-                                    <label for="parkingDate" class="block text-sm font-medium mb-2">ご利用予定日</label>
-                                    <input type="date" id="parkingDate" name="parkingDate"
-                                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all">
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="message" class="block text-sm font-medium mb-2">お問い合わせ内容</label>
-                                <textarea id="message" name="message" rows="4"
-                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:border-warm focus:ring-2 focus:ring-warm/20 outline-none transition-all resize-none"
-                                    placeholder="その他ご要望やご質問があればご記入ください"></textarea>
-                            </div>
-
-                            <button type="submit"
-                                class="w-full py-4 bg-gradient-to-r from-warm to-accent text-dark font-bold rounded-lg hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-warm">
-                                送信する
-                            </button>
-                        </form>
-
-                        <div class="mt-8 text-center">
-                            <p class="text-sm text-white/60 mb-2">またはお電話でのお問い合わせ</p>
-                            <a href="tel:03-3369-5526" class="text-2xl font-bold text-warm hover:underline">03-3369-5526</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="py-16 bg-fg text-white/60">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-12 mb-12">
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
                 <div>
                     <h4 class="font-display text-xl font-bold text-white mb-4">
                         <span class="text-warm">甲</span>隆閣
@@ -1153,20 +959,12 @@
                 </div>
 
                 <div>
-                    <h5 class="font-bold text-white mb-4">お問合せ</h5>
-                    <p class="text-sm mb-2">シティホテル甲隆閣</p>
-                    <p class="text-sm mb-2">〒169-0073<br>東京都新宿区百人町2-23-48</p>
-                    <a href="tel:03-3369-5526" class="text-warm hover:underline">03-3369-5526</a>
-                </div>
-
-                <div>
                     <h5 class="font-bold text-white mb-4">ナビゲーション</h5>
                     <ul class="space-y-2 text-sm">
                         <li><a href="#about" class="hover:text-warm transition-colors">ホテル概要</a></li>
                         <li><a href="#rooms" class="hover:text-warm transition-colors">客室</a></li>
                         <li><a href="#access" class="hover:text-warm transition-colors">アクセス</a></li>
                         <li><a href="#parking" class="hover:text-warm transition-colors">駐車場</a></li>
-                        <li><a href="#contact" class="hover:text-warm transition-colors">お問合せ</a></li>
                     </ul>
                 </div>
             </div>
@@ -1185,8 +983,6 @@
     </footer>
 
     <script>
-        // ... 保留原有JavaScript代码 ...
-        
         // Mobile Menu
         const menuBtn = document.getElementById('menuBtn');
         const closeMenuBtn = document.getElementById('closeMenuBtn');
@@ -1228,53 +1024,6 @@
         revealElements.forEach(el => {
             revealObserver.observe(el);
         });
-
-        // Form - Inquiry Type Toggle
-        const inquiryTypeRadios = document.querySelectorAll('input[name="inquiryType"]');
-        const reservationFields = document.getElementById('reservationFields');
-        const parkingFields = document.getElementById('parkingFields');
-
-        inquiryTypeRadios.forEach(radio => {
-            radio.addEventListener('change', (e) => {
-                const value = e.target.value;
-                
-                if (reservationFields && parkingFields) {
-                    if (value === 'reservation') {
-                        reservationFields.classList.remove('hidden');
-                        parkingFields.classList.add('hidden');
-                    } else if (value === 'parking') {
-                        reservationFields.classList.add('hidden');
-                        parkingFields.classList.remove('hidden');
-                    } else {
-                        reservationFields.classList.add('hidden');
-                        parkingFields.classList.add('hidden');
-                    }
-                }
-            });
-        });
-
-        // Set minimum date for date inputs
-        const today = new Date().toISOString().split('T')[0];
-        const checkinInput = document.getElementById('checkin');
-        const checkoutInput = document.getElementById('checkout');
-        const parkingDateInput = document.getElementById('parkingDate');
-        
-        if (checkinInput) {
-            checkinInput.setAttribute('min', today);
-            checkinInput.addEventListener('change', () => {
-                if (checkoutInput) {
-                    checkoutInput.setAttribute('min', checkinInput.value);
-                }
-            });
-        }
-        
-        if (checkoutInput) {
-            checkoutInput.setAttribute('min', today);
-        }
-        
-        if (parkingDateInput) {
-            parkingDateInput.setAttribute('min', today);
-        }
 
         // Header scroll effect
         const header = document.querySelector('header');
